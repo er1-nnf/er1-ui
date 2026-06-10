@@ -202,13 +202,13 @@ export default function HowItWorksPage() {
                       index % 2 === 1 ? 'lg:order-1' : ''
                     }`}
                   >
-                    <div className="relative bg-brand-ice rounded-3xl p-8 lg:p-12">
+                    <div className={`relative bg-brand-ice rounded-3xl overflow-hidden ${step.number === 4 ? 'h-[400px]' : 'p-8 lg:p-12'}`}>
                       <Image
                         src={step.image}
                         alt={step.title}
-                        width={280}
-                        height={560}
-                        className="mx-auto drop-shadow-2xl"
+                        width={step.number === 4 ? 380 : 280}
+                        height={step.number === 4 ? 760 : 560}
+                        className={step.number === 4 ? 'absolute bottom-0 left-1/2 -translate-x-1/2 drop-shadow-2xl' : 'mx-auto drop-shadow-2xl'}
                       />
                     </div>
                   </div>
