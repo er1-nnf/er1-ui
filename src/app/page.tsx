@@ -1,6 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
 import { TrustedBy } from '@/components/sections/TrustedBy';
 import { HowItWorks } from '@/components/sections/HowItWorks';
+import { BeforeAfter } from '@/components/sections/BeforeAfter';
 import { Features } from '@/components/sections/Features';
 import { ForBusiness } from '@/components/sections/ForBusiness';
 import { Testimonials } from '@/components/sections/Testimonials';
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <TrustedBy />
       <HowItWorks />
+      <BeforeAfter />
       <Features />
       <ForBusiness />
       <Testimonials />

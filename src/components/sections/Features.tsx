@@ -33,6 +33,7 @@ const featuresRight = [
     ),
     title: 'Pregled računa',
     description: 'Vizualni pregled svih izdanih R1 računa.',
+    comingSoon: true,
   },
   {
     icon: (
@@ -149,6 +150,11 @@ export function Features() {
                       {feature.title}
                     </h3>
                     <p className="text-brand-slate text-xs leading-relaxed">{feature.description}</p>
+                    {feature.comingSoon && (
+                      <span className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-green/10 text-brand-green">
+                        Uskoro
+                      </span>
+                    )}
                   </div>
                 </ScrollReveal>
               ))}

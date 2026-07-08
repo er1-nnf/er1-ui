@@ -10,14 +10,6 @@ const testimonial = {
   role: 'Vlasnica obrta',
 };
 
-const avatars = [
-  { name: 'Ivan', image: 'https://i.pravatar.cc/100?img=12' },
-  { name: 'Ana', image: 'https://i.pravatar.cc/100?img=5' },
-  { name: 'Marko', image: 'https://i.pravatar.cc/100?img=8' },
-  { name: 'Petra', image: 'https://i.pravatar.cc/100?img=9' },
-  { name: 'Luka', image: 'https://i.pravatar.cc/100?img=11' },
-];
-
 export function Testimonials() {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -104,22 +96,6 @@ export function Testimonials() {
                 </div>
               </div>
 
-              {/* Avatar row */}
-              <div className="mt-8 flex items-center gap-4">
-                <div className="flex -space-x-3">
-                  {avatars.map((avatar, i) => (
-                    <img
-                      key={i}
-                      src={avatar.image}
-                      alt={avatar.name}
-                      className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-lg"
-                    />
-                  ))}
-                </div>
-                <div className="text-white/60 text-sm">
-                  <span className="text-white font-semibold">5000+</span> zadovoljnih korisnika
-                </div>
-              </div>
             </div>
           </ScrollReveal>
         </div>

@@ -29,6 +29,11 @@ const faqItems = [
     answer:
       'Većina modernih POS sustava podržava skeniranje QR kodova i barkodova za R1 račune. To uključuje većinu supermarketa, benzinskih postaja i trgovina u Hrvatskoj.',
   },
+  {
+    question: 'Što ako blagajna traži ručni unos podataka?',
+    answer:
+      'Starije fiskalne blagajne možda nemaju vašu tvrtku u svojoj bazi. Pri prvom korištenju blagajnik će jednokratno ručno unijeti podatke, a blagajna ih sprema. Svaki sljedeći put QR kod radi automatski jer je tvrtka već registrirana u sustavu te blagajne.',
+  },
 ];
 
 export function FAQ() {
