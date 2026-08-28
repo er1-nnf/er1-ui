@@ -139,6 +139,16 @@ export function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/40">
             © {currentYear} ER1 Brza Aplikacija d.o.o. Sva prava pridržana.
+            {' · '}
+            Izrada:{' '}
+            <a
+              href="https://www.ninefold.eu"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-white/60 transition-colors"
+            >
+              Ninefold
+            </a>
           </p>
           <div className="flex gap-6">
             <Link href="/pravila-privatnosti" className="text-sm text-white/40 hover:text-white/60 transition-colors">
