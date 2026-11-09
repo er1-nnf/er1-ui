@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
 export function BeforeAfter() {
@@ -72,14 +73,14 @@ export function BeforeAfter() {
                 </li>
               </ul>
 
-              {/* Image placeholder */}
-              <div className="aspect-video bg-brand-mist rounded-2xl flex items-center justify-center">
-                <div className="text-center text-brand-slate/50">
-                  <svg className="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <span className="text-sm">Slika uskoro</span>
-                </div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/before-after-prije.webp"
+                  alt="Kupac diktira OIB blagajnici dok red čeka iza njega"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>
@@ -135,14 +136,14 @@ export function BeforeAfter() {
                 </li>
               </ul>
 
-              {/* Image placeholder */}
-              <div className="aspect-video bg-white rounded-2xl flex items-center justify-center shadow-sm border border-brand-mist">
-                <div className="text-center text-brand-slate/50">
-                  <svg className="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <span className="text-sm">Slika uskoro</span>
-                </div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-sm border border-brand-mist">
+                <Image
+                  src="/images/before-after-poslije.webp"
+                  alt="Kupac skenira QR kod s mobitela, blagajnica se smije"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>
